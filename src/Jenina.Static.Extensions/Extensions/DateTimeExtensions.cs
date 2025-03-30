@@ -5,7 +5,7 @@ using System.Text;
 namespace Jenina.Static.Extensions
 {
     public static class DateTimeExtensions
-    {      
+    {
         public static bool IsMinValue(this DateTime sourceDateTime)
         {
             var result = sourceDateTime == DateTime.MinValue;
@@ -26,37 +26,44 @@ namespace Jenina.Static.Extensions
 
         public static DateTime GetFirstDayOfMonth(this DateTime sourceDateTime)
         {
-            return sourceDateTime.AddDays(1 - sourceDateTime.Day).Date;
+            var result = sourceDateTime.AddDays(1 - sourceDateTime.Day).Date;
+            return result;
         }
 
         public static DateTime GetFirstDayOfNextMonth(this DateTime sourceDateTime)
         {
-            return sourceDateTime.AddDays(1 - sourceDateTime.Day).Date.AddMonths(1);
+            var result = sourceDateTime.AddDays(1 - sourceDateTime.Day).Date.AddMonths(1);
+            return result;
         }
 
         public static DateTime GetFirstDayOfLastMonth(this DateTime sourceDateTime)
         {
-            return sourceDateTime.AddDays(1 - sourceDateTime.Day).Date.AddMonths(-1);
+            var result = sourceDateTime.AddDays(1 - sourceDateTime.Day).Date.AddMonths(-1);
+            return result;
         }
 
         public static DateTime GetLastDayOfMonth(this DateTime sourceDateTime)
         {
-            return sourceDateTime.AddDays(1 - sourceDateTime.Day).Date.AddMonths(1).AddDays(-1);
+            var result = sourceDateTime.AddDays(1 - sourceDateTime.Day).Date.AddMonths(1).AddDays(-1);
+            return result;
         }
 
         public static DateTime GetSecondDayToLastOfMonth(this DateTime sourceDateTime)
         {
-            return sourceDateTime.AddDays(1 - sourceDateTime.Day).Date.AddMonths(1).AddDays(-2);
+            var result = sourceDateTime.AddDays(1 - sourceDateTime.Day).Date.AddMonths(1).AddDays(-2);
+            return result;
         }
 
         public static DateTime CurrentMonthFirstDay(this DateTime dt)
         {
-            return new DateTime(dt.Year, dt.Month, 1);
+            var result = new DateTime(dt.Year, dt.Month, 1);
+            return result;
         }
 
         public static DateTime CurrentMonthLastDay(this DateTime dt)
         {
-            return CurrentMonthFirstDay(dt).AddMonths(1).AddMilliseconds(-1);
+            var result = CurrentMonthFirstDay(dt).AddMonths(1).AddMilliseconds(-1);
+            return result;
         }
 
         public static DateTime CurrentDay(this DateTime sourceDateTime, double? hours = null)
@@ -66,13 +73,19 @@ namespace Jenina.Static.Extensions
             {
                 result = result.AddHours(hours.Value);
             }
-
             return result;
         }
 
         public static bool IsWeekend(this DateTime dt)
         {
-            return dt.DayOfWeek == DayOfWeek.Saturday || dt.DayOfWeek == DayOfWeek.Sunday;
+            var result = dt.DayOfWeek == DayOfWeek.Saturday || dt.DayOfWeek == DayOfWeek.Sunday;
+            return result;
+        }
+
+        public static long GetTimeStamp(this DateTime sourceDateTime)
+        {
+            var timeStamp = new DateTimeOffset(sourceDateTime).ToUnixTimeSeconds();
+            return timeStamp;
         }
     }
 }
