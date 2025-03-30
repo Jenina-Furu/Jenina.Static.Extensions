@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D02245A6-80B5-4EFE-A6F1-2F53E6DBC3C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{873B7D35-2789-4F9A-986C-94A896AF7CD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jenina.Static.Extensions", "src\Jenina.Static.Extensions\Jenina.Static.Extensions.csproj", "{BBF2239B-DA79-4FE1-A4EE-6A798AEBD9C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jenina.Static.Extensions.Test", "test\Jenina.Static.Extensions.Test\Jenina.Static.Extensions.Test.csproj", "{9E16E4E7-B280-4B18-870C-395C7940E25D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBF2239B-DA79-4FE1-A4EE-6A798AEBD9C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF2239B-DA79-4FE1-A4EE-6A798AEBD9C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF2239B-DA79-4FE1-A4EE-6A798AEBD9C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF2239B-DA79-4FE1-A4EE-6A798AEBD9C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E16E4E7-B280-4B18-870C-395C7940E25D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E16E4E7-B280-4B18-870C-395C7940E25D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E16E4E7-B280-4B18-870C-395C7940E25D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E16E4E7-B280-4B18-870C-395C7940E25D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBF2239B-DA79-4FE1-A4EE-6A798AEBD9C4} = {D02245A6-80B5-4EFE-A6F1-2F53E6DBC3C2}
+		{9E16E4E7-B280-4B18-870C-395C7940E25D} = {873B7D35-2789-4F9A-986C-94A896AF7CD7}
+	EndGlobalSection
+EndGlobal
