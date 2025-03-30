@@ -4,6 +4,13 @@
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<Nullable>enable</Nullable>
 		<RootNamespace>Jenina.Static</RootNamespace>
+		<PackageId>Jenina.Static.Extensions</PackageId>
+		<Version>0.0.9</Version>
+		<Authors>Jenina</Authors>
+		<Description>This is a basic extension library.</Description>
+		<PackageTags>extension encrypt capital</PackageTags>
+		<RepositoryUrl>https://github.com/Jenina-Furu/Jenina.Static.Extensions</RepositoryUrl>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 	</PropertyGroup>
 
 </Project>
